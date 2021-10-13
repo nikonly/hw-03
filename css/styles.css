@@ -44,14 +44,12 @@ body {
 }
 
 /* -------------------------logo----------------------------------- */
-
-.menu .logo {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.main-nav .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-
 .logo {
+  display: block;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -66,8 +64,8 @@ body {
 }
 .site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -104,12 +102,12 @@ body {
 
 .contact .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -152,9 +150,14 @@ h2 {
   padding-right: 15px;
 }
 /* --------------------герой---------------------------------- */
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--bg-color-black);
+}
 .hero {
   text-align: center;
-  background-color: var(--bg-color-black);
+
   color: var(--white-color);
   letter-spacing: 0.06em;
 }
@@ -197,9 +200,10 @@ h2 {
 .feature-list .item + .item {
   margin-left: 30px;
 }
-.feature-item {
+.feature .item {
   margin-top: 0;
   margin-bottom: 0;
+  flex-basis: 270px;
 }
 
 .item .feature-title {
@@ -219,10 +223,11 @@ h2 {
   margin-bottom: 0;
 }
 /* --------------------------Чем мы заниаемся---------------------  */
-
+.about-section {
+  padding-top: 0px;
+}
 .about-title {
   margin-top: 0;
-  margin-bottom: 50px;
 }
 .about-list {
   display: flex;
@@ -233,9 +238,17 @@ h2 {
 }
 
 /* ------------------------------Наша команда ------------------------*/
-
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team-item {
   max-width: 270px;
+  text-align: center;
 }
 .team-section-title {
   margin-top: 0;
@@ -244,31 +257,29 @@ h2 {
 img {
   display: block;
 }
-.image {
-  margin-bottom: 30px;
-  margin-right: 0px;
-}
+
 .team-title {
   margin-top: 0;
   margin-bottom: 10px;
-  padding: 10px;
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19px;
-  text-align: center;
+  line-height: 1.19;
 }
 .team-text {
-  margin-bottom: 30px;
-  margin-top: 0;
-
+  margin-bottom: 0px;
+  margin-top: 0px;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+}
+.paragraph {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-list {
   display: flex;
 }
+
 .team-list .team-item + .team-item {
   margin-left: 30px;
 }
@@ -276,14 +287,18 @@ img {
 /*----------------------------- Футер----------------------------------- */
 .footer {
   background-color: var(--bg-color-black);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-.tel {
-  margin-top: 6px;
+.contact-address .mail {
+  margin-bottom: 6px;
+  margin-right: 1154px;
 }
+
 .address,
 .contact-address {
   font-style: inherit;
@@ -298,7 +313,8 @@ img {
 /* ---------------------------------------------СТРАНИЦА ПОРТФОЛИО */
 
 /*--------------------- Кнопки фильтра -------------------------------------*/
-.project {
+.filter {
+  margin-bottom: 50px;
 }
 .button-filter {
   font-family: inherit;
@@ -309,7 +325,7 @@ img {
   cursor: pointer;
 
   display: inline-block;
-  margin-bottom: 50px;
+
   border-radius: 4px;
   padding: 6px 22px;
 }
@@ -331,18 +347,22 @@ img {
   display: block;
 }
 .project-title {
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
+  margin-top: 0px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0px 24px 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
   font-size: 16px;
-  line-height: 1.87px;
+  line-height: 1.87;
+}
+.project-paragraph {
+  padding: 20px 24px;
 }
 .project-list {
   display: flex;
@@ -360,4 +380,3 @@ img {
 .project-item:nth-child(3n) {
   margin-right: 0;
 }
-
